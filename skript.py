@@ -1,13 +1,11 @@
+import time
 import os
-print("hello world")
+
 script_dir = os.path.dirname(os.path.abspath(__file__))  
+print(script_dir)
 
-with open(os.path.join(script_dir,"test1.txt"), 'w') as file:
+with open("test.txt", 'w') as file:
     file.write('hi')
-
-with open(os.path.join(script_dir,"test2.txt"), 'w') as file:
-    file.write('hi')
-
-with open(os.path.join(script_dir,"test3.txt"), 'w') as file:
-    file.write('hi')
-
+    
+time.sleep(5)
+print(script_dir)
