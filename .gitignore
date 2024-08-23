@@ -1,3 +1,5 @@
 /build
 _internal
 *.txt
+*.spec
+*.exe
