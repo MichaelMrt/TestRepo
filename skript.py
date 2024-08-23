@@ -1,10 +1,13 @@
+import os
 print("hello world")
-with open("test.txt", 'w') as file:
+script_dir = os.path.dirname(os.path.abspath(__file__))  
+
+with open(os.path.join(script_dir,"test1.txt"), 'w') as file:
     file.write('hi')
 
-with open("test2.txt", 'w') as file:
+with open(os.path.join(script_dir,"test2.txt"), 'w') as file:
     file.write('hi')
 
-with open("test3.txt", 'w') as file:
+with open(os.path.join(script_dir,"test3.txt"), 'w') as file:
     file.write('hi')
 
